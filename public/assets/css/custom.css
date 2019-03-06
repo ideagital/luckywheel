@@ -1,0 +1,252 @@
+body{
+    font-size: 16px;
+    
+}
+.btn-warning{
+    background-color: #ed9b00;
+    border-color: #ed9b00;
+}
+.page{
+    max-width: 767px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100vh;
+    border-left: 1px solid #bd2130;
+    border-right: 1px solid #bd2130;
+    background-color: #bd2130;
+}
+section.lucky{
+    background-image: url('../../images/painBg.png');
+    background-size: auto;
+    background-repeat: repeat;
+}
+.gamePage{
+    background-image: url('../../images/bgLuck.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100%;
+}
+.page3{
+    background-image: url('../../images/lastBg.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+.pageBorder{
+    background-image: url('../../images/bgBorder.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.blankbox{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.blankbox>h3, .blankbox>.form-group{
+    margin-bottom: 30px;
+}
+.blankbox>p{
+    margin-bottom: 100px;
+}
+.getLucky{
+    padding: 30px 15px;
+    margin: 0 auto;
+}
+.titlePage{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.wheel{
+    position: relative;
+    padding-top: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.wheel img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: auto;
+}
+.third .lineButton{
+    width: 100%;
+    height: auto;
+}
+.titleButton{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.playButton{
+    position: relative;
+    display: block;
+    width: 200px;
+    margin: 0 auto 30px;
+}
+.playButton>h4{
+    color: #fff;
+    text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.8);
+}
+.ruleLink{
+    position: absolute;
+    bottom: 15px;
+    display: block;
+    width: 100%;
+    max-width: 767px;
+    text-align: center;
+}
+.ruleLink:hover, .ruleLink:focus{
+    text-decoration: none;
+}
+.submitButton{
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    width: 200px;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.play{
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear; 
+}
+.btnn{
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    line-height: 45px;
+    max-width: 160px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%; 
+    margin: 0 auto 30px;
+    border-radius: 8px;
+}
+.btn-3 {
+    background-image: linear-gradient(to bottom, #ff9b07, rgba(255, 51, 45, 0.8)); 
+    border: 3px solid rgba(255, 51, 45, 0.1);
+    box-shadow: 0px 2px 0 rgba(255, 51, 45, 1), 2px 4px 6px rgba(255, 51, 45, 0.4);
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+}
+
+/* .btn-3:hover {
+    background: rgba(255, 51, 45, 1.5);
+    border: 1px solid rgba(#000, .05);
+    box-shadow: 1px 1px 2px rgba(#fff, .2);
+    color: rgba(178, 37, 32, 1); 
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(255, 51, 45, 0.9);
+    transition: all 250ms linear;
+} */
+
+#resultModal .modal-content .modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#resultModal .modal-content{
+    border: 5px solid #ed9b00;
+}
+.modal-body p{
+    margin-bottom: 0px;
+}
+
+
+@media(max-width: 1025px){
+    .lineButton {
+        max-height: 340px;
+    }
+    .titlePage{
+        max-height: 150px;
+        width: auto;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 768px){
+    .lineButton {
+        max-height: 256px;
+    }
+    .titlePage{
+        max-height: 175px;
+        margin: 0 auto;
+    }
+    .wheel{
+        padding-top: 140px;
+    }
+}
+@media(max-width: 415px){
+    .lineButton {
+        max-height: 138px;
+    }
+    .wheel{
+        width: auto;
+        padding-top: 120px;
+    }
+    .titlePage{
+        max-height: 130px;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 375px){
+    .lineButton {
+        max-height: 119px;
+    }
+    .titlePage{
+        max-height: 135px;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 320px){
+    .lineButton {
+        max-height: 106px;
+    }
+    .wheel{
+        padding-top: 100px;
+        margin-bottom: 15px;
+    }
+    .titleButton{
+        margin-bottom: 15px !important;
+    }
+    .ruleLink{
+        bottom: 10px;
+    }
+    .titlePage{
+        max-height: 110px;
+        margin: 0 auto;
+    }
+}
+.superWheel .sWheel>.sWheel-txt-wrap>.sWheel-txt>div img {
+    max-width: 35%;
+}
+
+
+
+
+
+
